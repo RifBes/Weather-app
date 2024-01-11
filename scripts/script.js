@@ -17,7 +17,7 @@ async function showPosition(position) {
 getUserGeo();
 
 async function getUserGeo() {
-    const url = `https://ipinfo.io/json?token=ef2e5108e54ac7`;
+    const url = `https://ipinfo.io/json?token=${token}`;
     let response = await fetch(url);
     let json = await response.json();
     let local = json.loc.split(',');
