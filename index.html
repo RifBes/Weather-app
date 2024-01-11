@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Погода</title>
+    <link rel="stylesheet" href="./fonts/fonts.css">
+    <link rel="stylesheet" href="./styles/main.css">
+    <link rel="stylesheet" href="./styles/style.css">
+</head>
+
+<body class="body">
+    <header class="header container">
+        <img src="./imgs/logo.svg" alt="Логотип" class="header__logo">
+        <form action="" class="header__form" id="form">
+            <input type="text" class="form__input" placeholder="Искать погоду...">
+            <button class="form__button">
+                <img src="./imgs/icon/search.svg" alt="Поиск">
+            </button>
+        </form>
+    </header>
+    <main class="main">
+        <section class="weather">
+            <div class="weather-temp"></div>
+            <div class="weather__main">
+                <div class="weather-city"></div>
+            </div>
+            <img src="./imgs/icon/clouds.svg" alt="Облака" class="weather-icon">
+        </section>
+        <section class="details">
+            <p>Детали погоды...</p>
+            <div class="details__info">
+                <div class="details__info-title"></div>
+                <div class="details__info-peculiarity">
+                    <p>Макс. температура</p>
+                    <div class="details__info-details">
+                        <div class="details__info-tempmax">19°</div>
+                        <img src="./imgs/icon/temp_max.svg" alt="">
+                    </div>
+                </div>
+                <div class="details__info-peculiarity">
+                    <p>Мин. температура</p>
+                    <div class="details__info-details">
+                        <div class="details__info-tempmin">15°</div>
+                        <img src="./imgs/icon/temp_min.svg" alt="">
+                    </div>
+                </div>
+                <div class="details__info-peculiarity">
+                    <p>Влажность</p>
+                    <div class="details__info-details">
+                        <div class="details__info-humadity">58%</div>
+                        <img src="./imgs/icon/humadity.svg" alt="">
+                    </div>
+                </div>
+                <div class="details__info-peculiarity">
+                    <p>Облачность</p>
+                    <div class="details__info-details">
+                        <div class="details__info-clouds">86%</div>
+                        <img width="22" height="22" src="./imgs/icon/clouds.svg" alt="">
+                    </div>
+                </div>
+                <div class="details__info-peculiarity">
+                    <p>Ветер</p>
+                    <div class="details__info-details">
+                        <div class="details__info-wind">5km/h</div>
+                        <img src="./imgs/icon/wind.svg" alt="">
+                    </div>
+                </div>
+                <div class="decoration"></div>
+        </section>
+    </main>
+    <script src="./scripts/script.js"></script>
+</body>
+
+</html>
