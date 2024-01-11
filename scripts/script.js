@@ -1,4 +1,3 @@
-const API_KEY = '9249cc6d0fd533aa74ba102ea0ef0c2a';
 const form = document.getElementById('form');
 const input = document.querySelector('.form__input');
 
